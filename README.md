@@ -1,157 +1,159 @@
-# SmartCopy - 智能复制粘贴增强插件
+# SmartCopy - Smart Copy Paste Enhancement Plugin
 
-让 Obsidian 用户像在 VS Code 中一样，快速、精准地复制/粘贴/删除内容 —— 无需手动选中，支持上下文感知、格式化粘贴、快捷键控制。
+Let Obsidian users quickly and accurately copy/paste/delete content like in VS Code — without manual selection, with context awareness, formatted paste, and shortcut controls.
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/yourusername/obsidian-smartcopy)
-![GitHub](https://img.shields.io/github/license/yourusername/obsidian-smartcopy)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/Blankzsh/SmartCopy)
+![GitHub](https://img.shields.io/github/license/Blankzsh/SmartCopy)
 
-## 功能特性
+[中文版 README](README_zh.md)
 
-### 智能复制
-- ✅ 复制当前行 (Ctrl+Alt+L)
-- ✅ 复制当前段落 (Ctrl+Alt+P)
-- ✅ 复制当前标题部分
-- ✅ 复制当前代码块 (Ctrl+Alt+B)
-- ✅ 智能复制 (Ctrl+Shift+C) - 根据上下文自动判断复制内容
-- ✅ 表格行/列复制 (即将支持)
+## Features
 
-### 智能删除
-- ✅ 删除当前行 (Ctrl+Alt+D)
-- ✅ 删除当前段落 (Ctrl+Alt+X)
-- ✅ 智能删除 (Ctrl+Shift+D) - 根据上下文自动判断删除内容
+### Smart Copy
+- ✅ Copy current line (Ctrl+Alt+L)
+- ✅ Copy current paragraph (Ctrl+Alt+P)
+- ✅ Copy current heading section
+- ✅ Copy current code block (Ctrl+Alt+B)
+- ✅ Smart copy (Ctrl+Shift+C) - Automatically determine content to copy based on context
+- ✅ Table row/column copy (coming soon)
 
-### 智能粘贴
-- ✅ 粘贴为纯文本
-- ✅ 粘贴为引用块
-- ✅ 粘贴为待办列表项
-- ✅ 粘贴为行内代码
-- ✅ 自动格式化粘贴
+### Smart Delete
+- ✅ Delete current line (Ctrl+Alt+D)
+- ✅ Delete current paragraph (Ctrl+Alt+X)
+- ✅ Smart delete (Ctrl+Shift+D) - Automatically determine content to delete based on context
 
-### 自定义设置
-- ✅ 可启用/禁用特定复制/删除模式
-- ✅ 可自定义默认粘贴行为
-- ✅ 可通过 Obsidian 快捷键设置自定义快捷键
-- ✅ 状态栏提示显示
+### Smart Paste
+- ✅ Paste as plain text
+- ✅ Paste as quote block
+- ✅ Paste as todo list item
+- ✅ Paste as inline code
+- ✅ Automatic formatted paste
 
-## 安装方法
+### Customization
+- ✅ Enable/disable specific copy/delete modes
+- ✅ Customize default paste behavior
+- ✅ Set custom shortcuts via Obsidian's shortcut settings
+- ✅ Status bar notification display
 
-### 从 Obsidian 社区插件市场安装（推荐）
+## Installation
 
-1. 在 Obsidian 中打开设置
-2. 进入 "社区插件" 选项卡
-3. 禁用 "安全模式"
-4. 点击 "浏览" 按钮搜索 "SmartCopy"
-5. 找到插件后点击 "安装"
-6. 安装完成后启用插件
+### Install from Obsidian Community Plugin Marketplace (Recommended)
 
-### 手动安装
+1. Open Settings in Obsidian
+2. Go to the "Community Plugins" tab
+3. Disable "Safe Mode"
+4. Click the "Browse" button and search for "SmartCopy"
+5. Find the plugin and click "Install"
+6. Enable the plugin after installation
 
-1. 下载最新版本的 `main.js`、`manifest.json` 和 `styles.css` 文件
-2. 在你的 Obsidian 仓库中创建 `plugins/smartcopy/` 文件夹
-3. 将下载的文件放入该文件夹中
-4. 重新加载 Obsidian
-5. 在设置中启用 SmartCopy 插件
+### Manual Installation
 
-## 使用方法
+1. Download the latest `main.js`, `manifest.json`, and `styles.css` files
+2. Create a `plugins/smartcopy/` folder in your Obsidian vault
+3. Place the downloaded files in that folder
+4. Reload Obsidian
+5. Enable the SmartCopy plugin in Settings
 
-### 复制操作
+## Usage
 
-1. **复制当前行**: 将光标放在要复制的行上，使用命令面板或快捷键复制当前行
-2. **复制当前段落**: 将光标放在要复制的段落中，段落以空行分隔
-3. **复制当前标题部分**: 将光标放在标题下的内容中，会复制到下一个同级标题前
-4. **复制当前代码块**: 将光标放在代码块中，会复制整个代码块
-5. **智能复制**: 根据光标位置自动判断复制内容
+### Copy Operations
 
-### 删除操作
+1. **Copy Current Line**: Place cursor on the line to copy, use command palette or shortcut to copy current line
+2. **Copy Current Paragraph**: Place cursor in the paragraph to copy (paragraphs separated by blank lines)
+3. **Copy Current Heading Section**: Place cursor in content under a heading, will copy to before the next same-level heading
+4. **Copy Current Code Block**: Place cursor in code block, will copy the entire code block
+5. **Smart Copy**: Automatically determine content to copy based on cursor position
 
-1. **删除当前行**: 将光标放在要删除的行上，使用命令面板或快捷键删除当前行
-2. **删除当前段落**: 将光标放在要删除的段落中，段落以空行分隔
-3. **智能删除**: 根据光标位置自动判断删除内容
+### Delete Operations
 
-### 粘贴操作
+1. **Delete Current Line**: Place cursor on the line to delete, use command palette or shortcut to delete current line
+2. **Delete Current Paragraph**: Place cursor in the paragraph to delete (paragraphs separated by blank lines)
+3. **Smart Delete**: Automatically determine content to delete based on cursor position
 
-1. **粘贴为纯文本**: 移除所有格式，只粘贴纯文本内容
-2. **粘贴为引用块**: 将内容转换为 Markdown 引用格式
-3. **粘贴为待办列表项**: 将内容转换为待办列表项
-4. **粘贴为行内代码**: 将内容转换为行内代码或代码块
+### Paste Operations
 
-### 通过命令面板使用
+1. **Paste as Plain Text**: Remove all formatting, paste only plain text content
+2. **Paste as Quote Block**: Convert content to Markdown quote format
+3. **Paste as Todo List Item**: Convert content to todo list item
+4. **Paste as Inline Code**: Convert content to inline code or code block
 
-1. 按 `Ctrl+P` (Windows/Linux) 或 `Cmd+P` (Mac) 打开命令面板
-2. 搜索 "SmartCopy" 相关命令
-3. 选择要执行的命令
+### Using Command Palette
 
-## 设置选项
+1. Press `Ctrl+P` (Windows/Linux) or `Cmd+P` (Mac) to open command palette
+2. Search for "SmartCopy" related commands
+3. Select the command to execute
 
-在 Obsidian 设置中可以找到 SmartCopy 的设置选项：
+## Settings Options
 
-- **启用复制当前行**: 启用或禁用复制当前行功能
-- **启用复制当前段落**: 启用或禁用复制当前段落功能
-- **启用删除当前行**: 启用或禁用删除当前行功能
-- **启用删除当前段落**: 启用或禁用删除当前段落功能
-- **启用复制代码块**: 启用或禁用复制代码块功能
-- **启用表格复制**: 启用或禁用表格复制功能
-- **默认粘贴行为**: 设置默认的粘贴行为（纯文本、格式化、引用块）
-- **粘贴时移除链接格式**: 在粘贴时自动移除链接格式，只保留文本
-- **显示状态栏提示**: 在状态栏显示复制/粘贴操作提示
+You can find SmartCopy settings options in Obsidian Settings:
 
-## 快捷键
+- **Enable Copy Current Line**: Enable or disable copy current line feature
+- **Enable Copy Current Paragraph**: Enable or disable copy current paragraph feature
+- **Enable Delete Current Line**: Enable or disable delete current line feature
+- **Enable Delete Current Paragraph**: Enable or disable delete current paragraph feature
+- **Enable Copy Code Block**: Enable or disable copy code block feature
+- **Enable Table Copy**: Enable or disable table copy feature
+- **Default Paste Behavior**: Set default paste behavior (plain text, formatted, quote block)
+- **Remove Link Formatting When Pasting**: Automatically remove link formatting when pasting, keep only text
+- **Show Status Bar Notifications**: Display copy/paste operation notifications in status bar
 
-可以通过 Obsidian 的快捷键设置来自定义以下命令的快捷键：
+## Shortcuts
 
-| 命令 | 默认快捷键 |
-|------|------------|
-| 智能复制 | Ctrl+Shift+C |
-| 智能删除 | Ctrl+Shift+D |
-| 复制当前行 | Ctrl+Alt+L |
-| 删除当前行 | Ctrl+Alt+D |
-| 复制当前段落 | Ctrl+Alt+P |
-| 删除当前段落 | Ctrl+Alt+X |
-| 复制当前代码块 | Ctrl+Alt+B |
-| 粘贴为纯文本 | 无默认 |
-| 粘贴为引用块 | 无默认 |
+You can customize shortcuts for the following commands via Obsidian's shortcut settings:
 
-## 开发
+| Command | Default Shortcut |
+|---------|------------------|
+| Smart Copy | Ctrl+Shift+C |
+| Smart Delete | Ctrl+Shift+D |
+| Copy Current Line | Ctrl+Alt+L |
+| Delete Current Line | Ctrl+Alt+D |
+| Copy Current Paragraph | Ctrl+Alt+P |
+| Delete Current Paragraph | Ctrl+Alt+X |
+| Copy Current Code Block | Ctrl+Alt+B |
+| Paste as Plain Text | No default |
+| Paste as Quote Block | No default |
 
-### 克隆和安装
+## Development
+
+### Clone and Install
 
 ```bash
-git clone https://github.com/yourusername/obsidian-smartcopy.git
-cd obsidian-smartcopy
+git clone https://github.com/Blankzsh/SmartCopy.git
+cd SmartCopy
 pnpm install
 ```
 
-### 开发模式
+### Development Mode
 
 ```bash
 pnpm run dev
 ```
 
-### 构建
+### Build
 
 ```bash
 pnpm run build
 ```
 
-### 更新版本
+### Update Version
 
 ```bash
 pnpm run version 1.0.1
 ```
 
-## 支持
+## Support
 
-如果你喜欢这个插件，请考虑通过以下方式支持我：
+If you like this plugin, please consider supporting me through:
 
-- 在 GitHub 上 star 本项目
-- 在 Obsidian 插件市场中评价此插件
-- 通过 Buy Me a Coffee 支持我
+- Starring this project on GitHub
+- Rating this plugin in the Obsidian plugin marketplace
+- Supporting me via Buy Me a Coffee
 
-## 贡献
+## Contributing
 
-欢迎提交 Issue 和 Pull Request 来帮助改进这个插件。
+Feel free to submit Issues and Pull Requests to help improve this plugin.
 
-## 许可证
+## License
 
 MIT License
 
