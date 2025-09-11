@@ -3,7 +3,7 @@
   "name": "SmartCopy",
   "version": "1.1.0",
   "minAppVersion": "0.15.0",
-  "description": "智能复制粘贴增强插件 - 让 Obsidian 用户像在 VS Code 中一样，快速、精准地复制/粘贴/删除内容",
+  "description": "Smart copy/paste enhancement plugin for efficient content manipulation",
   "author": "Your Name",
   "authorUrl": "https://github.com/yourusername",
   "isDesktopOnly": false
