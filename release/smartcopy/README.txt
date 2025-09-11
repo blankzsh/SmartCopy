@@ -1,0 +1,1 @@
+SmartCopy plugin release package 

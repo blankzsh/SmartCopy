@@ -1,0 +1,10 @@
+node_modules
+*.exe
+*.jar
+.DS_Store
+/.idea
+/.vscode
+/.git
+/.obsidian
+main.js
+main.js.map

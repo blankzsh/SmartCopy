@@ -1,0 +1,44 @@
+/*
+
+ * SmartCopy Plugin Styles
+ */
+
+.smartcopy-status-bar {
+  padding: 0 10px;
+  font-size: 14px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+}
+
+.smartcopy-status-bar-item {
+  margin-right: 10px;
+}
+
+.smartcopy-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: var(--background-modifier-success);
+  color: white;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  animation: smartcopy-fadein 0.3s;
+}
+
+@keyframes smartcopy-fadein {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 暗色主题适配 */
+.theme-dark .smartcopy-notification {
+  background-color: var(--background-modifier-success);
+}
+
+.theme-light .smartcopy-notification {
+  background-color: var(--background-modifier-success);
+  color: white;
+}
